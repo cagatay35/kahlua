@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+
+	<bean id="AppContext" class="com.kahlua.AppContext"></bean>
+	
+ 	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+		<property name="driverClassName" value="oracle.jdbc.pool.OracleDataSource" />
+		<property name="url" value="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.201.232.207)(PORT=1521))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=FCMSDEV)))" />
+		<property name="username" value="cgokcel" />
+		<property name="password" value="cgokcel" />
+	</bean>
+	
+	<bean class="com.kahlua.MyRepo">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+     
+</beans>
