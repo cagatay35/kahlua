@@ -1,0 +1,12 @@
+*.iml
+<<<<<<< HEAD
+target/
+/.idea/*
+.idea/*
+/Kahlua.iml
+.idea/
+=======
+*/target/*
+*.class
+/.idea/*
+>>>>>>> 12860ed256520f7782b11680586f7ea8d7ddb19b
