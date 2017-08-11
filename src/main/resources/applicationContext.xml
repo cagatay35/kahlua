@@ -9,9 +9,9 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 
 		<property name="driverClassName" value="oracle.jdbc.pool.OracleDataSource" />
-		<property name="url" value="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.201.232.207)(PORT=1521))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=FCMSDEV)))" />
-		<property name="username" value="cgokcel" />
-		<property name="password" value="cgokcel" />
+		<property name="url" value="******" />
+		<property name="username" value="****" />
+		<property name="password" value="****" />
 	</bean>
 	
 	<bean class="com.kahlua.MyRepo">
